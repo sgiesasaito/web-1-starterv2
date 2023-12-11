@@ -1,5 +1,9 @@
-# DESN 368 Web Design 1 Starter Template
+DESN368 Web Design 1 Starter Template
+template, starter, boilderplae, prototype etc. for future web projects
 
-> **NOTE:** This is a work in progress.
+## citations
 
-DIY Template, starter, boilerplate, prototype, etc. for future Web Design projects. 
+* [patternsinnature] (https://en.wikipedia.org/wiki/Patterns_in_nature)
+* [favicon] (https://favicon.io/)
+* [pexels] (https://www.pexels.com/)
+* [wikimedia] (https://www.wikipedia.org/)
