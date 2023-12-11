@@ -1,3 +1,139 @@
-body {
-    background: #44d25e;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: 'Satoshi', sans-serif;
+  text-align: left;
+  }
+  
+p {
+  font-size: 120%;
+  line-height: 1.5;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 15vh 5%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, .3);
+	transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 400px;
+  height: 300px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+  width: 35%;
+  padding: 3%;
+  border-radius: 30px;
+  background: rgba(240,230,220, .95);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: 0;
+  margin-right: auto; 
+}
+
+.slide, .slide:before {
+  background: 75% 1% / cover;  
+}
+
+.header {
+  text-align: left;
+ color: rgba(255, 255, 255, 1);
+}
+
+#title {
+  background-color: black;
+  z-index:2;
+   position: relative;
+  width: 100%; /* Adjust the width to cover the entire width after the left side overflow */
+  box-sizing: border-box; /* Ensure padding and border don't add to the width */
+  align-items: flex-end;
+  display: flex;
+}
+
+#slide1:before {
+  background-image: url("https://images.pexels.com/photos/7718175/pexels-photo-7718175.jpeg?auto=compress&cs=tinysrgb&w=1200");
+  transform: translateZ(-1px) scale(2);
+  padding: 80vh 0%;
+}
+
+#slide2 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Romanesco_broccoli_texture.jpg/2880px-Romanesco_broccoli_texture.jpg");
+  z-index:2;
+   padding: 20vh 8%;
+}
+
+#slide3:before {
+  background-image: url("https://images.pexels.com/photos/11280353/pexels-photo-11280353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  transform: translateZ(-1px) scale(2);
+  padding: 20vh 0%;
+}
+
+#slide4 {
+  background-image: url("https://images.pexels.com/photos/12376025/pexels-photo-12376025.jpeg?auto=compress&cs=tinysrgb&w=1200");
+  z-index:2;
+  padding: 20vh 8%;
+}
+
+#slide1 {
+  background-size: cover; /* Maintain cover background size for other slides */
+  background-position: center; /* Center the background image */
+}
+
+.header h1 {
+  margin: 0;
+  padding: .5;
+  font-size: 12em;
+  line-height: .9;
 }
